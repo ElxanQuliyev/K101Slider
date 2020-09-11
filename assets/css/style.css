@@ -1,0 +1,33 @@
+#slider {
+  position: relative;
+  border: 2px solid grey;
+  overflow: hidden;
+}
+
+#slider .slider-middle .slider-item {
+  flex: 1;
+}
+
+#slider .slider-middle .slider-item img {
+  height: 600px;
+  object-fit: cover;
+  width: 100%;
+}
+
+#slider .next,
+#slider .prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+  cursor: pointer;
+}
+
+#slider .next {
+  right: 25px;
+}
+
+#slider .prev {
+  left: 25px;
+}
+/*# sourceMappingURL=style.css.map */

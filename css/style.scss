@@ -1,0 +1,31 @@
+#slider {
+    position: relative;
+    border:2px solid grey;
+    overflow: hidden;
+    .slider-middle {
+        .slider-item {
+            flex: 1;
+            img {
+                height: 600px;
+                object-fit: cover;
+                width: 100%;
+            }
+        }
+    }
+    .next,
+    .prev {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 5;
+        cursor: pointer;
+    }
+
+    .next {
+        right: 25px;
+    }
+
+    .prev {
+        left: 25px;
+    }
+}
